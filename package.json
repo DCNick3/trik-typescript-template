@@ -1,0 +1,28 @@
+{
+  "name": "trik-typescript-project",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rollup -c",
+    "run": "npm run build && npm run runOnly",
+    "runOnly": "python3 remote-run.py bin/real/real_test_entrypoint_1.js 0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-transform-regenerator": "^7.8.7",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.8.4",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "rollup": "^1.31.1",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-polyfill": "^3.0.0",
+    "rollup-plugin-root-import": "^1.0.0",
+    "rollup-plugin-typescript2": "^0.26.0",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.9.2",
+    "core-js": "^3.6.4",
+    "regenerator-runtime": "^0.13.3"
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "ES2019",
+        "module": "ES2015",
+        "outDir": "ts-out",
+        "strict": true,
+        "declaration": false,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "lib": ["ES2019"]
+    },
+    "include": [
+      "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ],
+}
